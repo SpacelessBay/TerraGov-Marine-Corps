@@ -748,6 +748,7 @@
 #define COMSIG_XENOABILITY_SNATCH "xenoability_snatch"
 
 #define COMSIG_XENOABILITY_NEUROGAS_GRENADE "xenoability_neurogas_nade"
+#define COMSIG_XENOABILITY_ACID_GRENADE "xenoability_acid_nade"
 
 #define COMSIG_XENOABILITY_VENTCRAWL "xenoability_vent_crawl"
 

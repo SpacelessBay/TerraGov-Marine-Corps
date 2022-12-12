@@ -223,3 +223,45 @@ GLOBAL_LIST_INIT(acid_spray_hit, typecacheof(list(/obj/structure/barricade, /obj
 	owner.throw_at(A, range, 2, owner)
 
 	return TRUE
+
+// ***************************************
+// *********** Acid Ball
+// ***************************************
+
+/datum/action/xeno_action/activable/acid_grenade
+	name = "Throw acid ball"
+	action_icon_state = "gas mine"
+	mechanics_text = "Throws a gas emitting grenade at your enemies."
+	keybinding_signals = list(
+		KEYBINDING_NORMAL = COMSIG_XENOABILITY_ACID_GRENADE,
+	)
+	plasma_cost = 300
+	cooldown_timer = 0.75 MINUTES
+
+/datum/action/xeno_action/activable/acid_grenade/use_ability(atom/A)
+	. = ..()
+	succeed_activate()
+	add_cooldown()
+
+	var/obj/item/explosive/grenade/smokebomb/xeno/praetorian/nade = new(get_turf(owner))
+	nade.throw_at(A, 5, 1, owner, TRUE)
+	nade.activate(owner)
+
+	owner.visible_message(span_warning("[owner] vomits up a bulbous lump and throws it at [A]!"), span_warning("We vomit up a bulbous lump and throw it at [A]!"))
+
+
+/obj/item/explosive/grenade/smokebomb/xeno/praetorian
+	name = "acid grenade"
+	desc = "A fleshy mass that bounces along the ground. It seems to be heating up."
+	greyscale_colors = "#008500"
+	greyscale_config = /datum/greyscale_config/xenogrenade
+	det_time = 20
+	dangerous = TRUE
+	smoketype = /datum/effect_system/smoke_spread/xeno/acid/light
+	arm_sound = 'sound/voice/alien_yell_alt.ogg'
+	smokeradius = 4
+
+/obj/item/explosive/grenade/smokebomb/xeno/update_overlays()
+	. = ..()
+	if(active)
+		. += image('icons/obj/items/grenade.dmi', "xenonade_active")

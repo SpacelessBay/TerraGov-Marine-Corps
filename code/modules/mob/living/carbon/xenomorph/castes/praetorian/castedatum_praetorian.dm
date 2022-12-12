@@ -57,6 +57,7 @@
 		/datum/action/xeno_action/activable/corrosive_acid,
 		/datum/action/xeno_action/activable/xeno_spit,
 		/datum/action/xeno_action/activable/spray_acid/cone,
+		/datum/action/xeno_action/activable/acid_grenade,
 		/datum/action/xeno_action/pheromones,
 		/datum/action/xeno_action/pheromones/emit_recovery,
 		/datum/action/xeno_action/pheromones/emit_warding,

@@ -21,7 +21,7 @@
 	owner.visible_message(span_warning("[owner] vomits up a bulbous lump and throws it at [A]!"), span_warning("We vomit up a bulbous lump and throw it at [A]!"))
 
 
-/obj/item/explosive/grenade/smokebomb/xeno
+/obj/item/explosive/grenade/smokebomb/xeno/sentinel
 	name = "neurogas grenade"
 	desc = "A fleshy mass that bounces along the ground. It seems to be heating up."
 	greyscale_colors = "#f0be41"

@@ -539,6 +539,12 @@
 	description = "Quickly dash, leaving acid in your path and knocking down the first marine hit. Has reset potential."
 	keybind_signal = COMSIG_XENOABILITY_ACID_DASH
 
+/datum/keybinding/xeno/acidnade
+	name = "acidball"
+	full_name = "Praetorian: Acid Ball"
+	description = "Throws a gas emitting grenade at the targetted area"
+	keybind_signal = COMSIG_XENOABILITY_ACID_GRENADE
+
 /datum/keybinding/xeno/toggle_savage
 	name = "toggle_savage"
 	full_name = "Runner: Toggle Savage"
