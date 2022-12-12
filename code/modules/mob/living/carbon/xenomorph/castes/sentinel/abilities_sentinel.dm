@@ -14,7 +14,7 @@
 	succeed_activate()
 	add_cooldown()
 
-	var/obj/item/explosive/grenade/smokebomb/xeno/nade = new(get_turf(owner))
+	var/obj/item/explosive/grenade/smokebomb/xeno/sentinel/nade = new(get_turf(owner))
 	nade.throw_at(A, 5, 1, owner, TRUE)
 	nade.activate(owner)
 
