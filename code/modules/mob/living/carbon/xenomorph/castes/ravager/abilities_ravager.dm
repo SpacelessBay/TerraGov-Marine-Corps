@@ -301,6 +301,11 @@
 
 	if(X.health < 0) //If we're at less than 0 HP, it's time to max rage.
 		rage_power = 1
+		var/total_damage = X.getFireLoss() + X.getBruteLoss()
+		var/burn_percentile_damage = X.getFireLoss() / total_damage
+		var/brute_percentile_damage = X.getBruteLoss() / total_damage
+		X.setBruteLoss((X.xeno_caste.max_health/2) * brute_percentile_damage)
+		X.setFireLoss((X.xeno_caste.max_health/2) * burn_percentile_damage)
 
 	var/rage_power_radius = CEILING(rage_power * 7, 1) //Define radius of the SFX
 
