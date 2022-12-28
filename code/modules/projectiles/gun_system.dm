@@ -1573,7 +1573,7 @@
 	if(gun_firemode == GUN_FIREMODE_BURSTFIRE)
 		delay += extra_delay
 
-	if(world.time >= delay && (world.time >= gun_user.last_gun_delay || gun_user.last_gun == gun_user.get_active_held_item() || gun_user.last_gun == gun_user.get_inactive_held_item()))
+	if(world.time >= delay && (world.time >= gun_user.last_gun_delay || gun_user.last_gun == gun_user.get_active_held_item() || gun_user.last_gun == gun_user.get_inactive_held_item() || (max(fire_delay, extra_delay) < 1 SECONDS)))
 		return FALSE
 
 	if(world.time % 3 && !user?.client?.prefs.mute_self_combat_messages)
