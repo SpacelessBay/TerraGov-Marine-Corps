@@ -398,9 +398,9 @@
 	travelling_time = 2 SECONDS //not powerful, but reaches target fast
 	ammo_id = ""
 	point_cost = 100
-	devastating_explosion_range = 2
-	heavy_explosion_range = 3
-	light_explosion_range = 6
+	devastating_explosion_range = 1
+	heavy_explosion_range = 2
+	light_explosion_range = 4
 	prediction_type = CAS_AMMO_EXPLOSIVE
 	cas_effect = /obj/effect/overlay/blinking_laser/widowmaker
 
