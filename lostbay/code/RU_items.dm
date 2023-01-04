@@ -902,6 +902,7 @@ SUBSYSTEM_DEF(ru_items)
 	icon_state = "t21_ext"
 	max_rounds = 50
 	icon_state_mini = "mag_rifle_big_yellow"
+	bonus_overlay = "t21_ext"
 
 /obj/item/ammo_magazine/rifle/T25/extended
 	name = "\improper T-25 extended magazine (10x26mm)"
@@ -909,6 +910,7 @@ SUBSYSTEM_DEF(ru_items)
 	icon_state = "T25_ext"
 	max_rounds = 120
 	icon_state_mini = "mag_rifle_big_yellow"
+	bonus_overlay = "T25_ext"
 
 /datum/supply_packs/weapons/T25_extended_mag
 	name = "T25 extended magazine"
