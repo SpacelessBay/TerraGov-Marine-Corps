@@ -2980,6 +2980,9 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	max_range = 8
 	puddle_duration = 1 SECONDS //Lasts 2-4 seconds
 
+/datum/ammo/xeno/acid/heavy/scatter/praetorian
+	bonus_projectiles_scatter = 10
+
 /datum/ammo/xeno/boiler_gas
 	name = "glob of gas"
 	icon_state = "boiler_gas2"

@@ -133,8 +133,8 @@ GLOBAL_LIST_INIT(acid_spray_hit, typecacheof(list(/obj/structure/barricade, /obj
 	action_icon_state = "scatter_spit"
 	desc = "Spits a spread of acid projectiles that splatter on the ground."
 	ability_name = "scatter spit"
-	plasma_cost = 280
-	cooldown_timer = 0.5 SECONDS
+	plasma_cost = 150
+	cooldown_timer = 1 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_SCATTER_SPIT,
 	)
@@ -148,7 +148,7 @@ GLOBAL_LIST_INIT(acid_spray_hit, typecacheof(list(/obj/structure/barricade, /obj
 	//Shoot at the thing
 	playsound(X.loc, 'sound/effects/blobattack.ogg', 50, 1)
 
-	var/datum/ammo/xeno/acid/heavy/scatter/scatter_spit = GLOB.ammo_list[/datum/ammo/xeno/acid/heavy/scatter]
+	var/datum/ammo/xeno/acid/heavy/scatter/praetorian/scatter_spit = GLOB.ammo_list[/datum/ammo/xeno/acid/heavy/scatter/praetorian]
 
 	var/obj/projectile/newspit = new /obj/projectile(get_turf(X))
 	newspit.generate_bullet(scatter_spit, scatter_spit.damage * SPIT_UPGRADE_BONUS(X))
