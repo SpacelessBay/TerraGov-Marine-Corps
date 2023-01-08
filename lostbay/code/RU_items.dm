@@ -922,4 +922,4 @@ SUBSYSTEM_DEF(ru_items)
 	name = "AR-21 extended magazines pack"
 	contains = list(/obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended, /obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended, /obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended, /obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended, /obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended, /obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended,/obj/item/ammo_magazine/rifle/standard_skirmishrifle/extended)
 	cost = 350
-	containertype = /obj/structure/closet/crate/weapon
+	containertype = /obj/structure/closet/crate/ammo
