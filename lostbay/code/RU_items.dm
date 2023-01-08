@@ -916,7 +916,7 @@ SUBSYSTEM_DEF(ru_items)
 	name = "T25 extended magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/T25/extended)
 	cost = 200
-	containertype = /obj/structure/closet/crate/weapon
+	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/weapons/t21_extended_mag
 	name = "AR-21 extended magazines pack"
