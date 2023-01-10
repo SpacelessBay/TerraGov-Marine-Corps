@@ -612,13 +612,6 @@
 		if(!coin)
 			to_chat(user, span_notice("You need to insert a coin to get this item."))
 			return
-		if(coin.string_attached)
-			if(prob(50))
-				to_chat(user, span_notice("You successfully pull the coin out before the [src] could swallow it."))
-			else
-				to_chat(user, span_notice("You weren't able to pull the coin out fast enough, the machine ate it, string and all."))
-				qdel(coin)
-				coin = null
 		else
 			qdel(coin)
 			coin = null
