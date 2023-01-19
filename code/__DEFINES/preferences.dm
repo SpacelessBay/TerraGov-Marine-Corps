@@ -178,3 +178,9 @@
 	"End of Round Deathmatch" = BE_DEATHMATCH,\
 	"Prefer Squad over Role" = BE_SQUAD_STRICT\
 	)
+
+#define SCREEN_RESOLUTIONS list(\
+	CONFIG_GET(string/default_view1),\
+	CONFIG_GET(string/default_view2),\
+	CONFIG_GET(string/default_view3)\
+	)
