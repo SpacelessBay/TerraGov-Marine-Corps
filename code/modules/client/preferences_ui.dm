@@ -702,7 +702,7 @@
 			user.client.view_size.set_default(get_screen_size(widescreenpref, screen_resolution))
 
 		if("screen_resolution")
-			var/choice = tgui_input_list(ui.user, "Choose widescreen resolution", "Resolutions", SCREEN_RESOLUTIONS)
+			var/choice = tgui_input_list(ui.user, "Choose widescreen resolution", "Resolutions", WIDESCREEN_RESOLUTIONS)
 			if(choice)
 				screen_resolution = choice
 				if(widescreenpref)

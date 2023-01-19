@@ -167,8 +167,8 @@
 		if(resolution)
 			switch(resolution)
 				if("19x15")
-					return CONFIG_GET(string/default_view2)
+					return WIDESCREEN2
 				if("21x15")
-					return CONFIG_GET(string/default_view3)
-		return CONFIG_GET(string/default_view1)
-	return CONFIG_GET(string/default_view_square)
+					return WIDESCREEN3
+		return WIDESCREEN1
+	return SQUARESCREEN
